@@ -1,0 +1,336 @@
+/* body{
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+#top{
+  background-color: gold;
+  font-size: 50px;
+}
+
+header{
+  background-color: brown;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index{
+  background-color:pink ;
+  padding:  0 0 0 10px;
+  font-size: 20px;
+}
+
+#title{
+  background-color: aqua;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px 0 20px 0;
+}
+
+#load{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+#today{
+  background-color: blue;
+  font-size: 90px;
+  text-align: center;
+  width: fit-content;
+  margin: 0 20%;
+}
+
+#detail{
+  background-color: blueviolet;
+  width:70%;
+  text-align: right;
+  font-size: 40px;
+  margin: 0 20%;
+}
+
+
+#my{
+  margin: 20px 0 0 0;
+  font-size: 30px;
+  width: fit-content;
+  margin: 10px 0 0 3%;
+  border: 2px solid;
+  background-color: yellow;
+  padding: 1rem;
+}
+
+#quote{
+  display: flex;
+  justify-content: center;
+}
+
+#itemInput{
+  border: 2px solid;
+  width: fit-content;
+  height: 56px; 
+  width:40%;
+}
+
+#itemInput::placeholder{
+  font-size: 35px;
+  align-items: center;
+}
+
+
+#addButton{
+  border: 2px solid;
+  height: 56px;
+  width: 7%;
+  margin: 0 0 0 5px;
+  font-size: 30px;
+
+}
+
+#wordlist{
+  display: flex;
+  justify-content: right;
+  background-color: red;
+}
+
+#list{
+  height: 40px;
+  width: 70%;
+}
+
+#sub{
+  margin: 0;
+  background-color: orange;
+  text-align: center;
+}
+
+#itemList{
+  background-color: skyblue;
+}
+
+#side{
+  width: 30%;
+  background-color: green;
+} */
+
+/* Basic Body and Font Styles */
+
+li{
+  list-style: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Darker text for readability */
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0; /* Lighter white on hover */
+}
+
+/* Main Content Area */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2, h3 {
+    color: #4CAF50; /* Green headings */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Today's Quote Section */
+#load {
+    text-align: center;
+    padding: 30px;
+    background-color: #e8f5e9; /* Light green background */
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+#today {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #2e7d32; /* Darker green for the quote */
+}
+
+#detail {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* My Library - Add Quote Section */
+#quote {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 15px; /* Space between input fields and button */
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    align-items: center; /* Vertically align items */
+}
+
+#itemInput, #nameInput {
+    flex: 1; /* Allows inputs to grow and shrink */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    min-width: 150px; /* Ensures inputs don't get too small */
+}
+
+#addButton {
+    padding: 12px 25px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#addButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+#addButton:active {
+    transform: translateY(0);
+}
+
+/* Word List Section (Deck and Pick Up) */
+#wordlist {
+    display: flex;
+    gap: 30px; /* Space between deck and pick up sections */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+#list {
+    flex: 2; /* Deck takes more space */
+    min-width: 300px; /* Minimum width for the deck */
+}
+
+#side {
+    flex: 1; /* Pick up takes less space */
+    min-width: 200px; /* Minimum width for pick up */
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+#itemList, #pickUpList {
+    list-style: none;
+    padding: 0;
+}
+
+#itemList li, #pickUpList li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word; /* Ensures long words wrap */
+    word-break: break-all; /* Breaks words if necessary */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #quote {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #itemInput, #nameInput, #addButton {
+        width: 100%;
+    }
+
+    #wordlist {
+        flex-direction: column;
+    }
+
+    #list, #side {
+        min-width: unset; /* Remove min-width for full flexibility */
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    #today {
+        font-size: 1.5rem;
+    }
+}
