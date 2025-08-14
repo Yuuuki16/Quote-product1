@@ -34,7 +34,7 @@ input.addEventListener('input',(e)=>{
     console.log("押下できません")
   }else{
     button.disabled = false
-    console.log("押下できます")z
+    console.log("押下できます")
   }
 });
 
@@ -106,16 +106,4 @@ input.addEventListener('keypress',(e)=>{
   button.click();
   } 
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
